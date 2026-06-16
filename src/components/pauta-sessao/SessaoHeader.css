@@ -1,0 +1,50 @@
+.sessao-header {
+    background: #fff;
+    padding: 8px 85px 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.sessao-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.status {
+    background: #2cb34a;
+    color: white;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sessao-navegacao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.sessao-navegacao a {
+    color: #1d5f9c;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sessao-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.inicio {
+    color: #4c4c4c;
+}
+
+.fim {
+    color: #4c4c4c;
+}
