@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import PautaSessao from './pages/PautaSessao'
 

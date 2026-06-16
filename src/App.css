@@ -1,0 +1,51 @@
+.atividade-legislativa {
+    background: #0079b8;
+    color: white;
+    padding: 24px;
+}
+
+.atividade-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.atividade-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.busca {
+    display: flex;
+}
+
+.busca input {
+    padding: 10px;
+    border: none;
+    width: 250px;
+}
+
+.busca button {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.atividade-menu {
+    margin-top: 20px;
+}
+
+.atividade-menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.atividade-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
