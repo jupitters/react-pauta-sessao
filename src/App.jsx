@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import PautaSessao from './pages/PautaSessao'
 
 function App() {
 
   return (
     <>
-      <h1>oi</h1>
+      <PautaSessao />
     </>
   )
 }
