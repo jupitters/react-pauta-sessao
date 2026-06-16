@@ -2,7 +2,7 @@
     height: 86px;
     background-color: #005a9c;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
     padding: 0 24px;
     color: white;
@@ -27,14 +27,14 @@
     font-weight: 300;
 }
 
-.header-center img {
+.imagem{
     height: 24px;
 }
 
 .header-right {
     display: flex;
     align-items: center;
-    gap: 18px;
+    
 }
 
 .header-right a {

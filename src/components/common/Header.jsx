@@ -3,7 +3,7 @@ import "./Header.css";
 const Header = () => {
     return (
         <header className="header">
-            <div className="header-left">
+            <div>
                 <button className="menu-button">
                     ☰
                 </button>
@@ -11,20 +11,20 @@ const Header = () => {
                 <span className="menu-text">Menu</span>
             </div>
 
-            <div className="header-center">
+            <div>
                 <img
                     src="https://www.senado.leg.br/noticias/essencial/images/senado.svg"
                     alt="Senado Federal"
                 />
             </div>
 
-            <div className="header-right">
+            <div>
                 <a href="#">Acessibilidade</a>
 
                 <span className="divider"></span>
 
                 <a href="#">
-                    <img
+                    <img className="imagem"
                         src="https://www.senado.leg.br/noticias/essencial/images/hands.svg"
                         alt="Libras"
                     />
