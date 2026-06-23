@@ -6,7 +6,7 @@ const PautaSessao = () => {
     <div className="app">
             <Cabecalho />
             <main className="content">
-                {/* <Corpo /> */}
+                <Corpo />
             </main>
         </div>
   )
