@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Accordion,
   AccordionContent,
@@ -28,6 +28,25 @@ const items = [
 ]
 
 const Corpo = () => {
+  const [dadosSessao, setDadosSessao] = useEffect([]);
+
+  const fetchDadosEventosLegislativos = async (sessao) => {
+    try{
+        const response = await fetch(`https://www6g.senado.leg.br/dados-eventos-legislativos/resources/sessao/recuperar-sessao?codigoSessao=${sessao}`)
+        const data = response.data;
+        if (data){
+          setDadosSessao(data);
+        }
+    } catch(e) {
+        console.log(e);
+    }
+}
+
+  useState(() => {
+    fetchDadosEventosLegislativos(550750)
+  }, [])
+  
+  console.log(dadosSessao);
   return (
     <Accordion type="multiple" defaultValue={["item-1"]} className="max-w-lg">
       {items.map((item) => (
