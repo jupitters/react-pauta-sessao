@@ -28,7 +28,7 @@ const items = [
 ]
 
 const Corpo = () => {
-  const [dadosSessao, setDadosSessao] = useEffect([]);
+  const [dadosSessao, setDadosSessao] = useState([]);
 
   const fetchDadosEventosLegislativos = async (sessao) => {
     try{
@@ -42,13 +42,13 @@ const Corpo = () => {
     }
 }
 
-  useState(() => {
+  useEffect(() => {
     fetchDadosEventosLegislativos(550750)
   }, [])
   
   console.log(dadosSessao);
   return (
-    <Accordion type="multiple" defaultValue={["item-1"]} className="max-w-lg">
+    <Accordion type="multiple" defaultValue={["item-1"]} className="w-[100%]">
       {items.map((item) => (
         <AccordionItem key={item.value} value={item.value}>
           <AccordionTrigger>{item.trigger}</AccordionTrigger>
