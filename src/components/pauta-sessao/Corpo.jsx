@@ -49,8 +49,8 @@ const Corpo = () => {
   console.log(dadosSessao);
   return (
     <Accordion type="multiple" defaultValue={[dadosSessao.emAndamento]} className="w-[100%]">
-      {items.map((item) => (
-        <AccordionItem key={item.value} value={item.value}>
+      {items.map((dadosSessao) => (
+        <AccordionItem key={dadosSessao.evento} value={item.value}>
           <AccordionTrigger>{item.trigger}</AccordionTrigger>
           <AccordionContent>{item.content}</AccordionContent>
         </AccordionItem>
