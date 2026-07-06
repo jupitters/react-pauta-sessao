@@ -51,8 +51,8 @@ const Corpo = () => {
     <Accordion type="multiple" defaultValue={[dadosSessao.emAndamento]} className="w-[100%]">
       {items.map((dadosSessao) => (
         <AccordionItem key={dadosSessao.evento} value={dadosSessao.evento}>
-          <AccordionTrigger>{item.trigger}</AccordionTrigger>
-          <AccordionContent>{item.content}</AccordionContent>
+          <AccordionTrigger>{dadosSessao.evento}</AccordionTrigger>
+          <AccordionContent>{dadosSessao.evento.detalhe}</AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>
